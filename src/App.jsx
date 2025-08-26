@@ -1,4 +1,5 @@
 import React from "react";
+import WebLink from "./components/webLink";
 
 const App = () =>{
   const  appName = "React Application"   //variable
@@ -11,6 +12,25 @@ const App = () =>{
 
     console.log("button clicked")   //will console
     alert("Button clicked!");      // will give alert popup message
+    }
+
+//------------------------------------------objects
+    const reactLink = {
+      name : "React",
+      documentName : "React is the library for web and native user interfaces. Build user interfaces out of individual pieces called components written in JavaScript.",
+      website :"https://react.dev/"
+  }  
+
+  const  instaLink = {
+    name : "Instagram",
+    documentName : "My instagram account which showcase my photos and videos.",
+    website : "https://www.instagram.com/___stardus_t___/"
+  }
+
+  const linkedInLink = {
+    name : "LinkedIn",
+    documentName : "My LinkedIn profile showcasing my professional experience.",
+    website : "www.linkedin.com/in/sanoj-krishnan"
   }
 
   return(
@@ -19,8 +39,19 @@ const App = () =>{
     <p>This is a paragraph</p>
     <p>User name is : {user.name}</p>
     <p>Is it valid profile : {`${profileValid}`}</p> {/* to show boolean values in DOM as it is, you need to use template literals */}
+
+
     <p>{profileValid ? "valid profile" : "invalid profile"}</p>
-    <button onClick={handleClick} >Click me</button>
+    <button onClick={handleClick} >Click me</button><br/><br/>
+
+
+    <WebLink title={reactLink.name} description={reactLink.documentName} website={reactLink.website} /> 
+    
+
+    <WebLink title={instaLink.name /*Props Example */} description={instaLink.documentName} website={instaLink.website} /> 
+
+
+    <WebLink title={linkedInLink.name} description={linkedInLink.documentName} website={linkedInLink.website} /> {/* props example */}
     </>
   )
 }
