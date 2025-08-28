@@ -5,6 +5,9 @@ import Comments from "./components/useStateEg";
 import Loading from "./components/loading";
 import UserForm from "./components/UserForm";
 import UserArray from "./components/UsersArray";
+import Theme from "./components/Theme";
+import Counter from "./components/useEffectEg";
+import Todo from "./components/Todo";
 
 const App = () => {
   const appName = "React Application"; //variable
@@ -71,6 +74,10 @@ const App = () => {
       <Loading />  {/*boolean in useState */}
       <UserForm /> {/*Object in useState */}
       <UserArray /> {/*Array in useState */}
+      <Theme />   {/*Theme changer*/}
+      <Counter />  {/*use Effect first example */}
+      <Todo />    {/*this is an example for useReducer hook */}
+      
     </>
   );
 };
