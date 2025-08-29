@@ -8,6 +8,8 @@ import UserArray from "./components/UsersArray";
 import Theme from "./components/Theme";
 import Counter from "./components/useEffectEg";
 import Todo from "./components/Todo";
+import ContextEg from "./components/useContextEg";
+import UserMemo from "./components/useMemoEg";
 
 const App = () => {
   const appName = "React Application"; //variable
@@ -77,6 +79,8 @@ const App = () => {
       <Theme />   {/*Theme changer*/}
       <Counter />  {/*use Effect first example */}
       <Todo />    {/*this is an example for useReducer hook */}
+      <ContextEg /> {/*useContext example */}
+      <UserMemo /> {/*memoization using useMemo() example */}
       
     </>
   );
