@@ -10,6 +10,7 @@ import Counter from "./components/useEffectEg";
 import Todo from "./components/Todo";
 import ContextEg from "./components/useContextEg";
 import UserMemo from "./components/useMemoEg";
+import UseReducer from "./components/UseReducer";
 
 const App = () => {
   const appName = "React Application"; //variable
@@ -81,6 +82,7 @@ const App = () => {
       <Todo />    {/*this is an example for useReducer hook */}
       <ContextEg /> {/*useContext example */}
       <UserMemo /> {/*memoization using useMemo() example */}
+      <UseReducer />
       
     </>
   );
